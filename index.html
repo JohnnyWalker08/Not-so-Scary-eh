@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scary Quiz Game</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1 id="question">Who is the best player in the world?</h1>
+    <div id="timer">Time left: <span id="time">25</span>s</div>
+    <input type="text" id="guessInput" placeholder="Enter your answer" />
+    <button onclick="submitGuess()">Submit Guess</button>
+    <p id="message"></p>
+    <p id="remainingTries"></p>
+  </div>
+  <div id="warning-popup" class="popup hidden">
+    <h2 id="warning-text">20 seconds left!</h2>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
